@@ -1,4 +1,5 @@
 public class Animal {
+    //private es para que una instancia o metodo sea solamente utilizado por la clase principal y utilizar en otras clases hijas
     public String nombre;
     public int edad;
     public float peso;

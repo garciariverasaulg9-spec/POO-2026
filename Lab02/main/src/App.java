@@ -2,7 +2,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         Perro miPerro= new Perro("Wera",6,10.4f,"Criolla",true);
         Canario miAve= new Canario("Pico", 2,0.4f,"Azul",true,10);
-        Gato miGato= new Gato("Michi",67,11.4f,"Siames",true,"Naranja");
+        Gato miGato= new Gato("Michi",67,11.4f,"Siames",false,"Naranja");
+        
         System.out.println("--Perro--");
         System.out.println(miPerro.toString());
         miPerro.buscarPelota();

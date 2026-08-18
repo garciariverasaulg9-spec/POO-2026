@@ -10,13 +10,16 @@ public class Gato extends Animal{
         this.color=color;
     }
     public void aranar(){
-        System.out.println("El gato esta aranando algo");
+        if (tieneUnas)
+            System.out.println(nombre+" esta aranando algo");
+        else    
+            System.out.println(nombre+" no puede aranar nada porque no tiene unas largas");
     }
     public void jugar(){
-        System.out.println("El gato esta jugando");
+        System.out.println(nombre +" esta jugando");
     }
     public void maullar(){
-        System.out.println("El gato esta maullando");
+        System.out.println(nombre+" esta maullando");
     }
     public  String getRaza(){
         return raza;
@@ -40,7 +43,7 @@ public class Gato extends Animal{
 
     @Override
     public String toString(){
-        return "Gato{ Nombre: "+nombre+",edad: "+edad+",peso: "+peso+", raza: "+ raza+ " y color: "+color+", ademas "+ (tieneUnas?"si": "no")+ " tiene unas largas}";
+        return "Nombre: "+nombre+"| Edad: "+edad+"| Peso: "+peso+"kg | Raza: "+ raza+ " | Color: "+color+" | "+ (tieneUnas?"Si": "No")+ " tiene unas largas";
     }
 
 }

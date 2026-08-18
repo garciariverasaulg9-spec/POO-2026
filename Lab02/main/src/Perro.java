@@ -9,10 +9,10 @@ public class Perro extends Animal{
     }
 
     public void ladrar(){
-        System.out.println("El perro esta ladrando");
+        System.out.println(nombre+" esta ladrando");
     }
     public void buscarPelota(){
-        System.out.println("El perro esta buscando la pelota");
+        System.out.println(nombre+" esta buscando la pelota");
     }
     public String getRaza(){
         return raza;
@@ -28,7 +28,7 @@ public class Perro extends Animal{
     }
     @Override
     public String toString(){
-        return "Perro{ Nombre: "+nombre+", edad: "+edad+",Peso: "+peso + ",raza: "+ raza+ " y "+ (estaVacunado?"si":"no")+ " esta vacunado}";
+        return "Nombre: "+nombre+"| Edad: "+edad+" | Peso: "+peso + "kg | Raza: "+ raza+ " | "+ (estaVacunado?"Si":"No")+ " esta vacunado";
     }
 
 }
