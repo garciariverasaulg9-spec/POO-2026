@@ -17,7 +17,7 @@ public class Automovil extends Vehiculo{
     public boolean getIsElectrico(){
         return isElectrico;
     }
-    final void setNumPuertas(int numPuertas){
+    public void setNumPuertas(int numPuertas){
         if (numPuertas>=2 && numPuertas <=6)
             this.numPuertas=numPuertas;
         else

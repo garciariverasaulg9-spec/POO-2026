@@ -24,17 +24,17 @@ public class Barco extends Vehiculo{
     public void setTipoCasco(String tipoCasco){
         this.tipoCasco=tipoCasco;
     }
-    final void setTonelajeMaxBote(double tonelajeMax){
+    public void setTonelajeMaxBote(double tonelajeMax){
         if (tonelajeMax>0 && tonelajeMax<=160000)
             this.tonelajeMaxBote=tonelajeMax;
         else    
-            System.out.println("Error: un bote no es capaz de levantar mas de 16 toneladas, tampoco se aceptan valores menores a 0");
+            System.out.println("Error: Un bote no es capaza de cargar: "+tonelajeMax+ "kg");
     }
-    final void setNumTripulantes(int numTripulantes){
+    public void setNumTripulantes(int numTripulantes){
         if (numTripulantes>=1 && numTripulantes<=8)
             this.numTripulantes=numTripulantes;
         else
-            System.out.println("Error: un baroc no puede poseer mmas de 8 tripulantes o menos de 1");
+            System.out.println("Error: Un Barco no puede tener "+numTripulantes);
     }
     @Override
     public String toString(){

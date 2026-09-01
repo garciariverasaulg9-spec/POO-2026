@@ -24,13 +24,13 @@ public class Vehiculo{
     public double getVelocidadMax(){
         return velocidadMax;
     }
-    final void setAnio(int anio){
+    public void setAnio(int anio){
         if (anio >= 1885 && anio <=2100)
             this.anio=anio;
         else
-            System.out.println("Error: Anio no valido...");
+            System.out.println("Error:"+ anio+" no es valido...");
     }
-    final void setVelocidadMax(double velocidadMax){
+    public void setVelocidadMax(double velocidadMax){
         if (velocidadMax >0)
             this.velocidadMax=velocidadMax;
         else
